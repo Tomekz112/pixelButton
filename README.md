@@ -5,7 +5,7 @@ Starting
 ===============
 First type in terminal/cmd:
 <p><code>go get github.com/Tomekz112/pixelButton</code></p>
-remember to also import pixel! _https://github.com/faiface/pixel_
+remember to also import pixel! *https://github.com/faiface/pixel*
 
 <p>Create new file import <code>import (
 "github.com/faiface/pixel"
@@ -41,7 +41,7 @@ DeleteButtons(min,max int)
 <p>if we have slice <code>[1 2 3 4 5 6 7 8 9 10]</code> and give min = 9 max = 10, we will get slice: <code>[1 2 3 4 5 6 7 8 9]</code>
 <p>if we have slice <code>[1 2 3 4 5 6 7 8 9 10</code> and give min = 0 max = 1, we will get slice: <code>[2 3 4 5 6 7 8 9 10]</code>
 <p>if we have slice <code>[1 2 3 4 5 6 7 8 9 10</code> and give min = 0 max = 10, we will get slice: <code>[]</code>
-<p>if we have slice <code>[1 2 3 4 5 6 7 8 9 10</code> and give min = 5 max = 7, we will get slice: <code>1 2 3 4 5 8 9 10</code>
+<p>if we have slice <code>[1 2 3 4 5 6 7 8 9 10</code> and give min = 5 max = 7, we will get slice: <code>[1 2 3 4 5 8 9 10]</code>
 
 
 
