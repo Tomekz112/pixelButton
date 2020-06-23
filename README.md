@@ -5,7 +5,7 @@ Starting
 ===============
 First type in terminal/cmd:
 <p><code>go get github.com/Tomekz112/pixelButton</code></p>
-remember to also import pixel! *https://github.com/faiface/pixel*
+remember to also import pixel! https://github.com/faiface/pixel
 
 <p>Create new file import <code>import (
 "github.com/faiface/pixel"
