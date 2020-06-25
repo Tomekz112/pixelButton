@@ -34,6 +34,12 @@ func ReturnButtons() ([]string, []pixel.Vec) {
 	return buttonsText, buttonsPos
 }
 
+//Edits button in slice with given position(min)
+func EditButton(min int, buttonPos pixel.Vec, text string) {
+		buttonsPos[min] = buttonPos
+		buttonsText[min] = text
+}
+
 //DrawButtons draw buttons from given position(min) to given position(max) in slice
 func DrawButtons(win pixel.Target, min, max int, textSize float64) {
 	for i := min; i-1 < max; i++ {
