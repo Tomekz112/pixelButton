@@ -20,6 +20,7 @@ type buttonType struct {
 	win                 pixel.Target
 	min, max            int
 	textSize            float64
+	variable	    float64
 }
 
 //CreateButton at give position, and given text
@@ -49,6 +50,15 @@ func DrawButtons(win pixel.Target, min, max int, textSize float64) {
 		buttonText.Clear()
 	}
 	return
+}
+
+//min is which button u want to draw and variable is which variable u want to add to button
+func DrawVariableButtons(win pixel.Target, min int, textSize float64, variable float64) {
+		buttonText = text.New(pixel.V(buttonsPos[min].X, buttonsPos[min].Y), basicAtlas)
+		fmt.Fprintln(buttonText, buttonsText[min],variable)
+		buttonText.Draw(win, pixel.IM.Scaled(buttonText.Orig, textSize))
+		buttonText.Clear()
+	        return
 }
 
 //InteractButton return true whenever mouse cursor is on button and number of button moues cursor
